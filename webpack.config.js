@@ -15,16 +15,6 @@ module.exports = {
         use: [
           { loader: "babel-loader" },
           { loader: "ts-loader" },
-          {
-            loader: 'tslint-loader',
-            options: {
-              typeCheck: true,
-              // tslint時に自動的に修正しない
-              fix: false,
-              // warningをエラーにする
-              emitErrors: true
-            },
-          },
         ],
         exclude: /node_modules/
       }
